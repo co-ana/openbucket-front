@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Angular AdminLTE | Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/AdminLTE.css">
+	<link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/Ionicons/css/ionicons.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Start angular -->
+	<script src="lib/angular/angular.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/angular-route/angular-route.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/angular-crumble/crumble.js" type="text/javascript" charset="utf-8"></script>
+
+	<!--  APP  -->
+	<script src="app/app.module.js" type="text/javascript" charset="utf-8"></script>
+	<script src="app/app.config.js" type="text/javascript" charset="utf-8"></script>
+	<script src="app/app.main.js" type="text/javascript" charset="utf-8"></script>
+	<!-- End angular -->
+
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body class="skin-blue" ng-controller="main as MAIN">
+
+	<head-menu params="MAIN.headMenu"></head-menu>
+
+	<div class="wrapper row-offcanvas row-offcanvas-left">
+		<sidebar-left params="MAIN.sideBarLeft"></sidebar-left>
+
+		<aside class="right-side">
+			<content-header crumble="crumble"></content-header>
+
+			<!-- Angular View -->
+			<section class="content" ng-view>
+			</section>
+
+		</aside>
+
+	</div>
+
+	<layout-options params="MAIN.layoutOptions"></layout-options>
+
+	<!-- Start libs -->
+	<script src="lib/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/bootstrap/dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<!-- End libs -->
+
+	<!-- Start angular dependencies -->
+
+	<!-- COMPONENTS -->
+	<script src="app/components/head-menu.js" type="text/javascript" charset="utf-8"></script>
+	<script src="app/components/sidebar-left.js" type="text/javascript" charset="utf-8"></script>
+	<script src="app/components/small-box.js" type="text/javascript" charset="utf-8"></script>
+	<script src="app/components/content-header.js" type="text/javascript" charset="utf-8"></script>
+	<script src="app/components/layout-options.js" type="text/javascript" charset="utf-8"></script>
+	<script src="app/components/nav-tabs.js" type="text/javascript" charset="utf-8"></script>
+	<script src="app/components/alert.js" type="text/javascript" charset="utf-8"></script>
+	<!-- END COMPONENTS -->
+
+	<!-- SESSIONS -->
+	<script src="app/sessions/app.home.js" type="text/javascript" charset="utf-8"></script>
+	<!-- END SESSIONS -->
+
+	<!-- End angular dependencies -->
+</body>
+</html>
