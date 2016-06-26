@@ -1,11 +1,12 @@
+/* global  angular */
 /**
  * Created by david on 14/03/16.
  */
 (function () {
-  'use strict';
+  'use strict'
   angular
     .module('app')
-    .config(routerProvider);
+    .config(routerProvider)
 
   /**
    * Router configuration
@@ -30,13 +31,12 @@
       })
       .otherwise({
         redirectTo: '/404'
-      });
+      })
 
     // configure html5 to get links working on jsfiddle
     $locationProvider.html5Mode({
       enabled: true,
       requireBase: false
-    });
+    })
   }
-
-})();
+})()
