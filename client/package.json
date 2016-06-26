@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/davidpvilaca/Angular-AdminLTE.git"
+    "url": "git+https://github.com/gerencio/Angular-AdminLTE.git"
   },
   "author": "David Vilaca <david@xdevel.com.br>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/davidpvilaca/Angular-AdminLTE/issues"
+    "url": "https://github.com/gerencio/Angular-AdminLTE/issues"
   },
   "homepage": "https://github.com/davidpvilaca/Angular-AdminLTE#readme",
   "devDependencies": {

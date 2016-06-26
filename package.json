@@ -1,21 +1,44 @@
 {
-  "name": "ngAdminLTE",
+  "name": "Open Bucket - front , sistema financeiro",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "nodejs ./app/bin/www"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xdevelsistemas/openbucket-front.git"
+  },
+  "author": "David Vilaca <david@xdevel.com.br>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xdevelsistemas/openbucket-front/issues"
+  },
+  "homepage": "https://github.com/xdevelsistemas/openbucket-front#readme",
   "dependencies": {
     "body-parser": "~1.0.0",
     "cookie-parser": "~1.0.1",
     "debug": "~0.7.4",
     "ejs": "~0.8.5",
-    "eslint-config-standard": "^5.3.1",
-    "eslint-plugin-promise": "^1.3.2",
-    "eslint-plugin-standard": "^1.3.2",
     "express": "~4.0.0",
     "morgan": "~1.0.0",
     "standard": "^7.1.2",
     "static-favicon": "~1.0.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "eslint-config-angular": "^0.5.0",
+    "eslint-config-standard": "^5.3.1",
+    "eslint-plugin-angular": "^1.2.2",
+    "eslint-plugin-promise": "^1.3.2",
+    "eslint-plugin-standard": "^1.3.2",
+    "gulp": "^3.9.1",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-jasmine": "^0.3.8",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "map-stream": "0.0.6",
+    "phantomjs": "^2.1.3",
+    "phantomjs-prebuilt": "^2.1.6"
   }
 }

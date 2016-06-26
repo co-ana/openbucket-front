@@ -1,3 +1,5 @@
+'use strict';
+
 // Karma configuration
 // Generated on Fri Mar 18 2016 14:51:33 GMT-0300 (BRT)
 
@@ -9,27 +11,10 @@ module.exports = function (config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: [ 'jasmine' ],
+    frameworks: ['jasmine'],
 
     // list of files / patterns to load in the browser
-    files: [
-      'lib/angular/angular.min.js',
-      'lib/jquery/dist/jquery.min.js',
-      'lib/bootstrap/dist/js/bootstrap.min.js',
-      'lib/angular-mocks/angular-mocks.js',
-      'lib/angular-route/angular-route.min.js',
-      'lib/angular-crumble/crumble.js',
-      'app/app.module.js',
-      'app/app.config.js',
-      'app/app.main.js',
-      'app/components/head-menu.js',
-      'app/components/sidebar-left.js',
-      'app/components/small-box.js',
-      'app/components/content-header.js',
-      'app/sessions/app.home.js',
-
-      'test/*Spec.js'
-    ],
+    files: ['lib/angular/angular.min.js', 'lib/jquery/dist/jquery.min.js', 'lib/bootstrap/dist/js/bootstrap.min.js', 'lib/angular-mocks/angular-mocks.js', 'lib/angular-route/angular-route.min.js', 'lib/angular-crumble/crumble.js', 'app/app.module.js', 'app/app.config.js', 'app/app.main.js', 'app/components/head-menu.js', 'app/components/sidebar-left.js', 'app/components/small-box.js', 'app/components/content-header.js', 'app/sessions/app.home.js', 'test/*Spec.js'],
 
     // list of files to exclude
     exclude: [],
@@ -37,7 +22,7 @@ module.exports = function (config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: [ 'progress' ],
+    reporters: ['progress'],
 
     // web server port
     port: 9876,
@@ -54,7 +39,7 @@ module.exports = function (config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: [ 'PhantomJS' ],
+    browsers: ['PhantomJS'],
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
@@ -63,5 +48,7 @@ module.exports = function (config) {
     // Concurrency level
     // how many browser should be started simultanous
     concurrency: Infinity
-  })
-}
+  });
+};
+
+//# sourceMappingURL=karma.conf-compiled.js.map
