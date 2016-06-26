@@ -28,7 +28,8 @@
   "standard": {
     "ignore": [
       "node_modules/**/*",
-      "client/lib/**/*"
+      "client/lib/**/*",
+      "client/_old/**/*"
     ]
   },
   "devDependencies": {

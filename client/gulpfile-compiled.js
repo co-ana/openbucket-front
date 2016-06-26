@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * Created by david on 17/03/16.
  */
@@ -6,10 +8,7 @@ var jshint = require('gulp-jshint');
 var karmaServer = require('karma').Server;
 
 gulp.task('hint', function () {
-  return gulp.src('./app/**/*.js')
-    .pipe(jshint({ linter: require('jshint-jsx').JSXHINT }))
-    .pipe(jshint.reporter('jshint-stylish'))
-    .pipe(jshint.reporter('fail'));
+  return gulp.src('./app/**/*.js').pipe(jshint({ linter: require('jshint-jsx').JSXHINT })).pipe(jshint.reporter('jshint-stylish')).pipe(jshint.reporter('fail'));
 });
 
 gulp.task('test', function (done) {
@@ -18,3 +17,5 @@ gulp.task('test', function (done) {
     singleRun: true
   }, done).start();
 });
+
+//# sourceMappingURL=gulpfile-compiled.js.map
