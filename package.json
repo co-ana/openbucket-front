@@ -1,5 +1,6 @@
 {
-  "name": "Open Bucket - front , sistema financeiro",
+  "name": "OpenBucket-Front",
+  "description": "OpenBucket - Sistema financeiro para aprendizado de node + microservices",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -15,6 +16,7 @@
     "url": "https://github.com/xdevelsistemas/openbucket-front/issues"
   },
   "homepage": "https://github.com/xdevelsistemas/openbucket-front#readme",
+  "README": "https://github.com/xdevelsistemas/openbucket-front#readme",
   "dependencies": {
     "body-parser": "~1.0.0",
     "cookie-parser": "~1.0.1",
@@ -40,6 +42,7 @@
     "eslint-plugin-promise": "^1.3.2",
     "eslint-plugin-standard": "^1.3.2",
     "gulp": "^3.9.1",
+    "gulp-eslint": "^2.0.0",
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.22",
     "karma-jasmine": "^0.3.8",

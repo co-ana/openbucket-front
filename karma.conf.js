@@ -13,22 +13,22 @@ module.exports = function (config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'lib/angular/angular.min.js',
-      'lib/jquery/dist/jquery.min.js',
-      'lib/bootstrap/dist/js/bootstrap.min.js',
-      'lib/angular-mocks/angular-mocks.js',
-      'lib/angular-route/angular-route.min.js',
-      'lib/angular-crumble/crumble.js',
-      'app/app.module.js',
-      'app/app.config.js',
-      'app/app.main.js',
-      'app/components/head-menu.js',
-      'app/components/sidebar-left.js',
-      'app/components/small-box.js',
-      'app/components/content-header.js',
-      'app/sessions/app.home.js',
+      'client/lib/angular/angular.min.js',
+      'client/lib/jquery/dist/jquery.min.js',
+      'client/lib/bootstrap/dist/js/bootstrap.min.js',
+      'client/lib/angular-mocks/angular-mocks.js',
+      'client/lib/angular-route/angular-route.min.js',
+      'client/lib/angular-crumble/crumble.js',
+      'client/app/app.module.js',
+      'client/app/app.config.js',
+      'client/app/app.main.js',
+      'client/app/components/head-menu.js',
+      'client/app/components/sidebar-left.js',
+      'client/app/components/small-box.js',
+      'client/app/components/content-header.js',
+      'client/app/sessions/app.home.js',
 
-      'test/*Spec.js'
+      'test/client/*Spec.js'
     ],
 
     // list of files to exclude
